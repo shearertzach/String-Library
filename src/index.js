@@ -60,3 +60,10 @@ function snakeCase(sentence) {
   }
   return snake.join('_')
 }
+
+function camelCase(sentence) {
+  const words = sentence.split(' ')
+  words[0] = words[0].toLowerCase()
+  for (let i = 1; i < words.length; i++) words[i] = capitalize(words[i])
+  return words.join('')
+}
