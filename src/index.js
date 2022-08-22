@@ -41,3 +41,22 @@ function kebabCase(sentence) {
   }
   return kebab.join('-')
 }
+
+function snakeCase(sentence) {
+  const cleanSentence = removeExtraSpaces(sentence)
+  const words = cleanSentence.split(' ')
+  const snake = []
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i].toLowerCase().split('')
+    const cleanWord = []
+    for (let j = 0; j < word.length; j++) {
+      const letter = word[j]
+      const letterCode = letter.charCodeAt()
+      const isLetter = (letterCode > 96) && (letterCode < 123)
+      const isNumber = (letterCode > 47) && (letterCode < 58)
+      if (isLetter || isNumber) cleanWord.push(letter)
+    }
+    snake.push(cleanWord.join(''))
+  }
+  return snake.join('_')
+}
