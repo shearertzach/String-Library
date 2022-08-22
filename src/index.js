@@ -7,3 +7,9 @@ function capitalize(str) {
 function allUpperCase(str) {
   return str.toUpperCase()
 }
+
+function capitalizeWords(sentence) {
+  const words = sentence.split(' ')
+  for (let i = 0; i < words.length; i++) words[i] = capitalize(words[i])
+  return words.join(' ')
+}
