@@ -67,3 +67,17 @@ function camelCase(sentence) {
   for (let i = 1; i < words.length; i++) words[i] = capitalize(words[i])
   return words.join('')
 }
+
+function shift(sentence, offset) {
+  const section = sentence.slice(0, offset ? offset : 1)
+  const sectionOffset = sentence.slice(offset ? offset : 1, sentence.length)
+  return sectionOffset.concat(section)
+}
+
+function makeHashTag(sentence) {
+  const words = sentence.split(' ')
+  const sortedWords = words.sort((a, b) => {return b.length - a.length})
+  const longestWords = sortedWords.slice(0, 3)
+  for (let i = 0; i < longestWords.length; i++) longestWords[i] = '#' + longestWords[i]
+  return longestWords
+}
