@@ -76,8 +76,14 @@ function shift(sentence, offset) {
 
 function makeHashTag(sentence) {
   const words = sentence.split(' ')
-  const sortedWords = words.sort((a, b) => {return b.length - a.length})
+  const sortedWords = words.sort((a, b) => { return b.length - a.length })
   const longestWords = sortedWords.slice(0, 3)
   for (let i = 0; i < longestWords.length; i++) longestWords[i] = '#' + longestWords[i]
   return longestWords
+}
+
+function isEmpty(sentence) {
+  const characters = sentence.trim().split('')
+  for (let i = 0; i < characters.length; i++) if (characters[i] != ' ') return false
+  return true
 }
