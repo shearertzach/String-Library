@@ -13,3 +13,12 @@ function capitalizeWords(sentence) {
   for (let i = 0; i < words.length; i++) words[i] = capitalize(words[i])
   return words.join(' ')
 }
+
+function removeExtraSpace(sentence) {
+  const words = sentence.split(' ')
+  const newSentence = []
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] !== '') newSentence.push(words[i])
+  }
+  return newSentence.join(' ')
+}
