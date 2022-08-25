@@ -12,3 +12,13 @@
 | shift()             | This method will take the first character of a string and move to the end of a string                                                                                                           | (sentence, offset) |
 | makeHashTag()       | Converts three longest word in a sentence to hashtags.                                                                                                                                          | (sentence)         |
 | isEmpty()           | Returns `true` if the given string is empty or contains only whitespace.                                                                                                                        | (sentence)         |
+
+### Usage
+
+To install the package you can use the following command within a Javascript project.
+`npm install @zach-shearer/string-library`
+
+You can them integrate it into your app using
+`const strings = require('@zach-shearer/string-library')`
+or
+`import strings from '@zach-shearer/string-library'`
