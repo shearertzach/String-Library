@@ -87,3 +87,18 @@ function isEmpty(sentence) {
   for (let i = 0; i < characters.length; i++) if (characters[i] != ' ') return false
   return true
 }
+
+allUpperCase('lfkasjd jhlfkads lkjfdaslkj')
+
+
+module.exports.capitalize = capitalize
+module.exports.allUpperCase = allUpperCase
+module.exports.capitalizeWords = capitalizeWords
+module.exports.removeExtraSpaces = removeExtraSpaces
+module.exports.kebabCase = kebabCase
+module.exports.snakeCase = snakeCase
+module.exports.camelCase = camelCase
+module.exports.shift = shift
+module.exports.makeHashTag = makeHashTag
+module.exports.isEmpty = isEmpty
+
