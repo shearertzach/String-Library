@@ -88,8 +88,6 @@ function isEmpty(sentence) {
   return true
 }
 
-allUpperCase('lfkasjd jhlfkads lkjfdaslkj')
-
 
 module.exports.capitalize = capitalize
 module.exports.allUpperCase = allUpperCase

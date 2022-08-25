@@ -13,16 +13,21 @@
 | makeHashTag()       | Converts three longest word in a sentence to hashtags.                                                                                                                                          | (sentence)         |
 | isEmpty()           | Returns `true` if the given string is empty or contains only whitespace.                                                                                                                        | (sentence)         |
 
-### Usage
+## Usage
 
 To install the package you can use the following command within a Javascript project.
 
-`npm install @zach-shearer/string-library`
+```npm install @zach-shearer/string-library```
 
 You can them integrate it into your app using
 
-`const strings = require('@zach-shearer/string-library')`
+```const strings = require('@zach-shearer/string-library')```
 
 or
 
-`import strings from '@zach-shearer/string-library'`
+```import strings from '@zach-shearer/string-library'```
+
+
+## Example
+
+```capitalizeWords('this is an example string') // This Is An Example String```
