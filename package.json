@@ -1,6 +1,6 @@
 {
   "name": "@zach-shearer/string_lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "src/index.js",
   "scripts": {
