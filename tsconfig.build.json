@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./dist",
+    "outFile": "./dist/index.js"
+  }
+}

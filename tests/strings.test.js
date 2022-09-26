@@ -1,4 +1,4 @@
-const strings = require('../src/index')
+const strings = require('../dist/index')
 
 test('should be capitalized', () => {
   const capitalizedWord = strings.capitalize('tesTthisStrIng')

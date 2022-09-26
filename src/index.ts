@@ -15,7 +15,12 @@ function capitalizeWords(sentence: string): string {
 }
 
 function removeExtraSpaces(sentence: string): string {
-  return sentence.trim();
+  const words: string[] = sentence.split(" ");
+  const newSentence: string[] = [];
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] !== "") newSentence.push(words[i]);
+  }
+  return newSentence.join(" ");
 }
 
 function kebabCase(sentence: string): string {
@@ -27,7 +32,7 @@ function kebabCase(sentence: string): string {
     const cleanWord: string[] = [];
     for (let j = 0; j < word.length; j++) {
       const letter = word[j];
-      const letterCode = letter.charCodeAt(j);
+      const letterCode = letter.charCodeAt(0);
       const isLetter = letterCode > 96 && letterCode < 123;
       const isNumber = letterCode > 47 && letterCode < 58;
       if (isLetter || isNumber) cleanWord.push(letter);
@@ -46,7 +51,7 @@ function snakeCase(sentence: string): string {
     const cleanWord: string[] = [];
     for (let j = 0; j < word.length; j++) {
       const letter = word[j];
-      const letterCode = letter.charCodeAt(j);
+      const letterCode = letter.charCodeAt(0);
       const isLetter = letterCode > 96 && letterCode < 123;
       const isNumber = letterCode > 47 && letterCode < 58;
       if (isLetter || isNumber) cleanWord.push(letter);
