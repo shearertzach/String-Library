@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://img.shields.io/github/workflow/status/shearertzach/String-Library/Node.js%20CI?label=Prod%20Build&style=for-the-badge"/>
+  <img src="https://img.shields.io/github/package-json/v/shearertzach/String-Library?style=for-the-badge"/>
+</p>
+
+
+
+
 # String-Library
 
 | Function            | Description                                                                                                                                                                                     | Parameters         |
